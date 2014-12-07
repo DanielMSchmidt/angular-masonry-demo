@@ -15,19 +15,20 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'wu.masonry'
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/no-image', {
+        templateUrl: 'views/masonry.html',
+        controller: 'NoImageCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/image', {
+        templateUrl: 'views/masonry.html',
+        controller: 'ImageCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/no-image'
       });
   });
