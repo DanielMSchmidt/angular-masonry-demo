@@ -1,7 +1,7 @@
 Angular Masonry Demo
 ====================
 
-A demonstration of angular-masonry for image and no image content
+A demonstration of angular-masonry for image and no image content (build as a response for https://github.com/passy/angular-masonry/issues/89)
 
 Setup
 -----
