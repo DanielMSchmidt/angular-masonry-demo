@@ -21,11 +21,11 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/no-image', {
-        templateUrl: 'views/masonry.html',
+        templateUrl: 'views/no-images.html',
         controller: 'NoImageCtrl'
       })
       .when('/image', {
-        templateUrl: 'views/masonry.html',
+        templateUrl: 'views/with-images.html',
         controller: 'ImageCtrl'
       })
       .otherwise({

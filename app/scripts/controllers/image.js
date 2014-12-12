@@ -8,20 +8,11 @@ function genLoremPixelUrl() {
 
 angular.module('nonImageContentApp')
   .controller('ImageCtrl', function ($scope) {
+    var arr = [];
 
-    $scope.title = 'Image Bricks';
+    for (var i = 0; i < 10; i++) {
+      arr.push({src: genLoremPixelUrl()})
+    };
 
-    $scope.bricks = [
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' },
-      { content: '<img src="'+ genLoremPixelUrl() +'" alt="A masonry brick" />' }
-    ];
+    $scope.bricks = arr;
   });
